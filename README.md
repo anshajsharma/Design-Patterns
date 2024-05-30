@@ -1,5 +1,5 @@
 <h1 align="center">
-    C++ Advanced
+    Design Patterns
  </h1>
  <h5 align="center">
    Author: Anshaj Kumar
@@ -8,51 +8,29 @@
  
  ### Contents  
  
-| No. | Topics |
-| --- | --------- |
-|    | **Core C++** |
-|1   | [Special Notes](#special-notes-) |
-|2   | [Strings in C++](#strings-in-c) |
-
-
+| TYPE | PATTERNS |  One Liner |
+| --- | --------- | ----- |
+|   | [Summary](https://github.com/anshajsharma/Design-Patterns/blob/main/Types/Summary.md) | Summary of all design patterns |
+| **Creational**  | [Singleton Pattern](https://github.com/anshajsharma/Design-Patterns/blob/main/Types/Creational/Singleton.md) | Ensures a class has only one instance and provides a global point of access to it.|
+|             | [Factory Method Pattern](https://github.com/anshajsharma/Design-Patterns/blob/main/Types/Creational/Factory%20Method%20Pattern.md) | Creates objects without specifying the exact class of object that will be created. |
+|             | [Abstract Factory](https://github.com/anshajsharma/Design-Patterns/blob/main/Types/Creational/Abstract%20Factory.md) |Provides an interface for creating families of related or dependent objects without specifying their concrete classes. |
+|             | [Builder Pattern](https://github.com/anshajsharma/Design-Patterns/blob/main/Types/Creational/Builder%20Pattern.md) | Constructs a complex object step by step. |
+|             | [Prototype Pattern](https://github.com/anshajsharma/Design-Patterns/blob/main/Types/Creational/Prototype%20Pattern.md) | Creates new objects by copying an existing object, known as the prototype.|
+| **Structural**  | [Adapter](https://github.com/anshajsharma/Design-Patterns/blob/main/Types/Structural/Adapter%20Pattern.md) | Allows incompatible interfaces to work together. |
+|             | [Bridge](https://github.com/anshajsharma/Design-Patterns/blob/main/Types/Structural/Bridge%20Pattern.md) | Separates an object’s interface from its implementation so the two can vary independently. |
+|             | [Composite](https://github.com/anshajsharma/Design-Patterns/blob/main/Types/Structural/Composite%20Pattern.md) | Composes objects into tree structures to represent part-whole hierarchies. |
+|             | [Decorator](https://github.com/anshajsharma/Design-Patterns/blob/main/Types/Structural/Decorator%20Pattern.md) | Adds additional behaviors to objects dynamically. |
+|             | [Facade](https://github.com/anshajsharma/Design-Patterns/blob/main/Types/Structural/Facade%20Pattern.md) | Provides a simplified interface to a complex subsystem.|
+|             | [Flyweight](https://github.com/anshajsharma/Design-Patterns/blob/main/Types/Structural/Flyweight%20Pattern.md) | Reduces the cost of creating and manipulating a large number of similar objects.|
+|             | [Proxy](https://github.com/anshajsharma/Design-Patterns/blob/main/Types/Structural/Proxy%20Pattern.md) | Provides a surrogate or placeholder for another object to control access to it. |
+| **Behavioral**  | [Singlton]() | |
+|             | [Singlton]() | |
+|             | [Singlton]() | |
+|             | [Singlton]() | |
+|             | [Singlton]() | |
+|             | [Singlton]() | |
+|             | [Singlton]() | |
+|             | [Singlton]() | |
 
 
 ##### *Refer [GFG tutorials](https://www.geeksforgeeks.org/software-design-patterns) for more*
-
-
-
- ###    Special Notes :  
- 
- 1. If we do not define *main()* function in any cpp file compiler will compile the file but linker will give missing **entry point error**.
- 2. *Refrences should we initialised with a value/refrence at time of deceleration*  
- Reference is not a variable and we have to declare it at time of initialisation and 
-	 can't be modified furthur i.e. assigned to reference of other variable if we try to do this 
-  	it will simply copy the value.
-    ```C++
-		int a = 5;
-		int b = 6;
-		// int& ref ;  X wrong (ref should we initialised wiyh a value/refrence at time of deceleration)
-		int& ref = a;
-		ref = b ; ( implies a = 6 , b = 6 ) 
-    ```  
-   3. `const int* const a=new int`  Here, 1st pointer means you cant change refrence of pointer(i.e memory address it is pointing to) 2nd const means you can't change Value after dereferencing pointer.
-   4. If any method is const (declare const after method name like `int GetCount() const { return count; }`) i.e. it is read only and not going to change value of any variable of class.
-   5. If a variable is declared as `mutable int a;`, it can be changed from inside of const methods.  
-   6. `Object obj = new Object();` initialises Object in Heap while `Object obj;` initialise Object in stack.  
->  *  Allocating in Heap takes longer than allocating in stack.  
->  *  In case of heap , You have to manually free the memory you allocated. (i.e. `delete obj;`)  
->  *  In case of heap , contiguous memory is allocated i.e. we have to find a place from where required amount of memory is present which of course takes time. (There is something called freelist which takes care of free memories/memories addresses.)
-	
-   7. `new` keyword calls constructor and `delete` keyword calls destructor in case of class.
-   
-
-   
-**[⬆ Back to Top](#----c-advanced-)** 
-
-# Strings in C++
-```C++
-#include<iostream>
-#include<string>
-int main()
-
-```
